@@ -76,4 +76,10 @@ input[type=text] {
 
 .content {
     padding: 10px;
+    border-color: aqua;
+}
+
+.content-shown {
+    border-color: black;
+    border-width: 2px;
 }
