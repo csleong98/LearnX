@@ -78,6 +78,10 @@ input[type=text] {
     padding: 10px;
     border-color: aqua;
 }
+.shepherd-target.shepherd-enabled {
+    border: green 2px solid;
+
+}
 
 .content-shown {
     border-color: black;

@@ -43,11 +43,6 @@ tour.addStep('test-2', {
     text: 'Hello World',
     attachTo: '.content h3 bottom',
     classes: 'shepherd shepherd-open shepherd-theme-arrows shepherd-transparent-text',
-    when: {
-        show: function() {
-            $("content").removeClass("content");
-        }
-    },
     buttons: [
         {
             text: 'Back',
