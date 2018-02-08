@@ -1,0 +1,52 @@
+/* variables */
+.browser-container {
+  border: 3px solid #f8f9fa;
+  border-radius: 7px; }
+
+.browser-row {
+  padding: 10px;
+  background: #e9ecef;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.column {
+  float: left; }
+
+.left {
+  width: 15%; }
+
+.right {
+  width: 10%; }
+
+.middle {
+  width: 75%; }
+
+.browser-row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block; }
+
+input[type=text] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: #fff;
+  margin-top: -8px;
+  height: 25px;
+  color: #868e96; }
+
+.content {
+  padding: 10px; }
+
+.shepherd-targer.shepherd-enabled {
+  border: #17a2b8 2px solid; }
+
+/*# sourceMappingURL=_learn.css.map */
