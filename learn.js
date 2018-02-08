@@ -8,9 +8,9 @@ tour = new Shepherd.Tour({
     }
 });
 
-tour.addStep('example-step', {
-    title: 'Testing',
-    text: 'Appear Pls <code>HTML 5 rocks</code>',
+tour.addStep('navbrand', {
+    title: 'Navbrand',
+    text: 'Code Blocks',
     attachTo: '.small-navbar-brand bottom',
     buttons: [
 
@@ -26,9 +26,9 @@ tour.addStep('example-step', {
     ]
 });
 
-tour.addStep('test', {
-    title: 'Testing 2',
-    text: 'Hello World',
+tour.addStep('nav-links', {
+    title: 'navlinks',
+    text: 'Code Blocks',
     attachTo: '.small-navbar-links bottom',
     classes: 'shepherd shepherd-open shepherd-theme-arrows shepherd-transparent-text',
     buttons: [
@@ -44,9 +44,9 @@ tour.addStep('test', {
     ]
 });
 
-tour.addStep('test-2', {
-    title: 'Testing 3',
-    text: 'Hello World',
+tour.addStep('header', {
+    title: 'Header',
+    text: 'Code Blocks',
     attachTo: '.content h3 bottom',
     classes: 'shepherd shepherd-open shepherd-theme-arrows shepherd-transparent-text',
     buttons: [
@@ -62,21 +62,4 @@ tour.addStep('test-2', {
     ]
 });
 
-tour.addStep('test-4', {
-    title: 'Testing 4',
-    text: 'Hello World',
-    attachTo: '.fully-responsive p bottom',
-    classes: 'shepherd shepherd-open shepherd-theme-arrows shepherd-transparent-text',
-    buttons: [
-        {
-            text: 'Back',
-            classes: 'shepherd-button-secondary',
-            action: tour.back
-        }, {
-            text: 'Exit',
-            classes: 'shepherd-button-example-primary',
-            action: tour.hide
-        }
-    ]
-});
 tour.start();
