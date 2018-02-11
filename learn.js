@@ -2,7 +2,7 @@ var tour;
 
 tour = new Shepherd.Tour({
     defaults: {
-        classes: 'shephred-element shepherd-theme-arrows',
+        classes: 'shepherd-theme-arrows',
         scrollTo: true,
         showCancelLink: true
     }
@@ -10,8 +10,9 @@ tour = new Shepherd.Tour({
 
 tour.addStep('navbrand', {
     title: 'Navbrand',
-    text: 'Code Blocks',
+    text: '<div class="code-block"><pre>I am a code block.</pre></div>',
     attachTo: '.small-navbar-brand bottom',
+    classes: 'shepherd-theme-arrows shepherd-content code',
     buttons: [
 
         {
@@ -30,7 +31,7 @@ tour.addStep('nav-links', {
     title: 'navlinks',
     text: 'Code Blocks',
     attachTo: '.small-navbar-links bottom',
-    classes: 'shepherd shepherd-open shepherd-theme-arrows shepherd-transparent-text',
+    classes: 'shepherd-theme-arrows shepherd-transparent-text',
     buttons: [
         {
             text: 'Back',

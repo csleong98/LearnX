@@ -74,10 +74,6 @@ input[type=text] {
 
 /* Page content */  
 
-.content {
-    padding: 10px;
-    border-color: aqua;
-}
 .shepherd-target.shepherd-enabled {
     border: green 2px solid;
 
