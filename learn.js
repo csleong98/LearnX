@@ -10,7 +10,7 @@ tour = new Shepherd.Tour({
 
 tour.addStep('navbrand', {
     title: 'Navbrand',
-    text: '<div class="code-block"><pre>I am a code block.</pre></div>',
+    text: ['Testing para', '<code>&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"</code>',],
     attachTo: '.small-navbar-brand bottom',
     classes: 'shepherd-theme-arrows shepherd-content code',
     buttons: [

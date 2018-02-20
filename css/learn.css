@@ -76,5 +76,6 @@ input[type=text] {
 
 .shepherd-target.shepherd-enabled {
     border: green 2px solid;
+    padding: 2px 3px 2px 3px;
 
 }

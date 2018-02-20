@@ -299,19 +299,10 @@
   line-height: 1.3em;
 }
 
-.shepherd-element.shepherd-theme-arrows .shepherd-content pre {
- color: #4e75c5;
- font-size: 15px;
- font-family: Consolas, Monaco, 'Andale Mono', monospace; 
- text-align: left;
- padding: 2px 10px 2px 10px;
-}
+/* 
+.shepherd-element.shepherd-theme-arrows .shepherd-content .shepherd-text code {
 
-.shepherd-element.shepherd-theme-arrows .shepherd-content .code-block {
-  background-color: #282828;
-  border-radius: 5px;
-
-}
+} */
 
 .shepherd-element.shepherd-theme-arrows .shepherd-content .shepherd-text p:last-child {
   margin-bottom: 0;
