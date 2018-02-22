@@ -1,6 +1,4 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -14,7 +12,9 @@ p {
     color: #999;
 }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
@@ -44,6 +44,7 @@ a, a:hover, a:focus {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+
 #sidebar {
     width: 450px;
     position: fixed;
@@ -80,22 +81,24 @@ a, a:hover, a:focus {
     font-size: 1.1em;
     display: block;
 }
+
 #sidebar ul li a:hover {
     color: #7386D5;
     background: #fff;
 }
 
-#sidebar ul li.active > a, .chevron-dropdown[aria-expanded="true"] {
+#sidebar ul li.active>a,
+.chevron-dropdown[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
 }
-
 
 a[data-toggle="collapse"] {
     position: relative;
 }
 
-.chevron-dropdown[aria-expanded="false"]::before, .chevron-dropdown[aria-expanded="true"]::before {
+.chevron-dropdown[aria-expanded="false"]::before,
+.chevron-dropdown[aria-expanded="true"]::before {
     content: '\f078';
     display: block;
     position: absolute;
@@ -103,10 +106,10 @@ a[data-toggle="collapse"] {
     font-family: 'FontAwesome';
     font-size: 0.6em;
 }
+
 .chevron-dropdown[aria-expanded="true"]::before {
     content: '\f077';
 }
-
 
 ul ul a {
     font-size: 0.9em !important;
@@ -125,19 +128,34 @@ ul.CTAs a {
     border-radius: 5px;
     margin-bottom: 5px;
 }
+
 a.download {
     background: #fff;
     color: #7386D5;
 }
-a.article, a.article:hover {
+
+a.article,
+a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }
 
+/* ---------------------------------------------------
+    CODE BLOCKS STYLE
+----------------------------------------------------- */
+
+pre code {
+    background-color: rgb(44, 44, 44);
+    color: #4ec0c5;
+    display: block;
+    margin: 0 8px 0 6px;
+    border-radius: 5px;
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+
 #content {
     width: calc(100% - 450px);
     padding: 40px;
@@ -147,14 +165,15 @@ a.article, a.article:hover {
     top: 0;
     right: 0;
 }
+
 #content.active {
     width: 100%;
 }
 
-
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -450px;
