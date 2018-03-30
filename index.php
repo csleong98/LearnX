@@ -66,7 +66,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="./php/user-register.php" method="POST">
+          <form action="backend_functions/user-register.php" method="POST">
             <div class="form-group">
               <label for="fullname">Full Name:</label>
               <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter fullname here">
@@ -78,6 +78,14 @@
             <div class="form-group">
               <label for="email">Email:</label>
               <input class="form-control" type="text" name="email" id="email" placeholder="Enter email here">
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input class="form-control" type="text" name="password" id="password" placeholder="Enter password here">
+            </div>
+            <div class="form-group">
+              <label for="confirm_password">Confirm Password:</label>
+              <input class="form-control" type="text" name="confirm_password" id="confirm_password" placeholder="Confirm your password here">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
