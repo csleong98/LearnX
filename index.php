@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php include('./backend_functions/user-register.php');?>
 <html lang="en">
 
 <head>
@@ -66,30 +66,35 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="backend_functions/user-register.php" method="POST">
+          <form action="" method="POST">
             <div class="form-group">
               <label for="fullname">Full Name:</label>
               <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter fullname here">
+              <span></span>
             </div>
             <div class="form-group">
               <label for="username">Username:</label>
               <input class="form-control" type="text" name="username" id="username" placeholder="Enter username here">
+              <span></span>
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
               <input class="form-control" type="text" name="email" id="email" placeholder="Enter email here">
+              <span></span>
             </div>
             <div class="form-group">
               <label for="password">Password:</label>
               <input class="form-control" type="text" name="password" id="password" placeholder="Enter password here">
+              <span></span>
             </div>
             <div class="form-group">
               <label for="confirm_password">Confirm Password:</label>
               <input class="form-control" type="text" name="confirm_password" id="confirm_password" placeholder="Confirm your password here">
+              <span></span>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button id="reg_btn" type="submit" class="btn btn-primary">Regiser</button>
             </div>
           </form>
         </div>
@@ -213,6 +218,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/sign_up.js"></script>
 
 </body>
 
