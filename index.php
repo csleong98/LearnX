@@ -1,4 +1,6 @@
-<?php include('./backend_functions/user-register.php');?>
+<?php
+include ("user-register.php"); 
+?>
 <html lang="en">
 
 <head>
@@ -94,7 +96,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button id="reg_btn" type="submit" class="btn btn-primary">Regiser</button>
+              <button id="reg_btn" type="submit" class="btn btn-primary">Register</button>
             </div>
           </form>
         </div>
@@ -217,6 +219,7 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="vendor/jquery/jquery-3.2.1.min.js"></script> -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/sign_up.js"></script>
 

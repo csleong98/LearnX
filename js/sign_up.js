@@ -17,11 +17,6 @@ $('document').ready(function () {
             $('#fullname').parent().addClass("form_error");
             $('#fullname').siblings("span").text('Please fill in full name');
             return;
-        } else if (fullname.length > 20) {
-            $('#fullname').parent().removeClass("form_success");
-            $('#fullname').parent().addClass("form_error");
-            $('#fullname').siblings("span").text('User cannot exceed 20 characters');
-            return;
         }
 
         $.ajax({
@@ -34,10 +29,9 @@ $('document').ready(function () {
             success: function (response) {
                 if (response == 'taken') {
                     fullname_state = false;
-                    $('#fullname').parent().removeClass("form-control");
                     $('#fullname').parent().removeClass("form_success");
                     $('#fullname').parent().addClass("form_error");
-                    $('#fullnamee').siblings("span").text('Sorry... name already taken');
+                    $('#fullname').siblings("span").text('Sorry... name already taken');
                 } else if (response == 'not_taken') {
                     fullname_state = true;
                     $('#fullname').parent().removeClass("form_error");
@@ -88,6 +82,7 @@ $('document').ready(function () {
         var mail = mail_format.test(email);
 
         if (email == '') {
+            pass_state = false;
             $('#email').parent().removeClass("form_success");
             $('#email').parent().addClass("form_error");
             $('#email').siblings("span").text('Please fill in your email');
@@ -110,13 +105,11 @@ $('document').ready(function () {
             success: function (response) {
                 if (response == 'taken') {
                     email_state = false;
-                    $('#email').parent().removeClass("form-control");
                     $('#email').parent().removeClass("form_success");
                     $('#email').parent().addClass("form_error");
                     $('#email').siblings("span").text('Sorry... Email already taken');
                 } else if (response == 'not_taken') {
                     email_state = true;
-                    $('#no_span').add();
                     $('#email').parent().removeClass("form_error");
                     $('#email').parent().addClass("form_success");
                     $('#email').siblings("span").text('Email available');
@@ -137,6 +130,7 @@ $('document').ready(function () {
             $('#password').siblings("span").text('Please fill in your password');
             return;
         } else if (pass == password_confirm) {
+            pass_state = true;
             $('#password').parent().removeClass("form_error");
             $('#password').parent().addClass("form_success");
             $('#password').siblings("span").text('Password match');
@@ -168,6 +162,7 @@ $('document').ready(function () {
             $('#confirm_password').siblings("span").text('Password does not match');
             return;
         } else if (pass == password_confirm) {
+            pass_state = true;
             $('#confirm_password').parent().removeClass("form_error");
             $('#confirm_password').parent().addClass("form_success");
             $('#confirm_password').siblings("span").text('Password match');
@@ -179,12 +174,13 @@ $('document').ready(function () {
         var fullname = $('#fullname').val();
         var username = $('#username').val();
         var email = $('#email').val();
-
-        var pass = $('#password').val();
+        var password = $('#password').val();
         var password_confirm = $('#confirm_password').val();
 
-        if ((fullname_state == false) || (username_state == false || email_state == false) || (pass_state == false) || (password_confirm_state == false)) {
-            alert('All information needs to be filled except for e-mail');
+        if ((fullname_state == false || username_state == false) || (email_state == false || pass_state == false)) {
+            if (password_confirm_state == false) {
+                alert('Please fill in ALL information');
+            }
         } else {
             // proceed with form submission
             $.ajax({
@@ -195,7 +191,7 @@ $('document').ready(function () {
                     'fullname': fullname,
                     'username': username,
                     'email': email,
-                    'pass': pass,
+                    'password': password,
                     'password_confirm': password_confirm
                 },
                 success: function (response) {
@@ -206,9 +202,10 @@ $('document').ready(function () {
                         $('#email').val('');
                         $('#password').val('');
                         $('#confirm_password').val('');
-                        location.replace("../index.php");
+                        location.replace("index.php");
+                    } else {
+                        alert("not saved");
                     }
-
                 }
             });
         }
