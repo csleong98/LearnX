@@ -48,7 +48,7 @@ include ('connection.php');
 		$results = mysqli_query($conn, $sql);
 		if (mysqli_num_rows($results) >= 0) {
 		
-			$query = "INSERT INTO user(username, realname, email, password, hash) "."VALUES('$username', '$fullname', '$email', '$password', '$confirm_password');"; 
+			$query = "INSERT INTO user(username, realname, email, password, confirm_password) "."VALUES('$username', '$fullname', '$email', '$password', '$confirm_password');"; 
 			$results = mysqli_query($conn, $query);
 			echo 'saved';
 			exit();

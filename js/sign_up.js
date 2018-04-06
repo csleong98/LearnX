@@ -197,12 +197,11 @@ $('document').ready(function () {
                 success: function (response) {
                     if (response == 'saved') {
                         alert('Registered Successfully. Log in now');
-                        $('#teamname').val('');
+                        $('#fullname').val('');
                         $('#username').val('');
                         $('#email').val('');
                         $('#password').val('');
                         $('#confirm_password').val('');
-                        location.replace("index.php");
                     } else {
                         alert("not saved");
                     }
