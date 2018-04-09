@@ -129,17 +129,12 @@ $('document').ready(function () {
             $('#password').parent().addClass("form_error");
             $('#password').siblings("span").text('Please fill in your password');
             return;
-        } else if (pass == password_confirm) {
+        }
+        else {
             pass_state = true;
             $('#password').parent().removeClass("form_error");
             $('#password').parent().addClass("form_success");
-            $('#password').siblings("span").text('Password match');
-            return;
-        } else if (pass !== password_confirm) {
-            pass_state = false;
-            $('#password').parent().removeClass("form_success");
-            $('#password').parent().addClass("form_error");
-            $('#password').siblings("span").text('Password does not match');
+            $('#password').siblings("span").text('Password filled in');
             return;
         }
     });
