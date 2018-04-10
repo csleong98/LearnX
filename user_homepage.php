@@ -25,6 +25,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
+    <link href="css/userpage.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,86 +50,49 @@ session_start();
                 </li>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+    <div class="container-fluid">
+        <div class="card-deck">
+            <div class="card" style="">
+                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Buildin the navbar</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Start</a>
+                    <p class="card-text"><small class="text-muted">Status:</small></p>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div><div class="col-sm-3">
-                <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            <div class="card" style="">
+                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Building the user profile section</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Start</a>
+                    <p class="card-text"><small class="text-muted">Status:</small></p>
+
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            <div class="card" style="">
+                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Building the porfolio section</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Start</a>
+                    <p class="card-text"><small class="text-muted">Status:</small></p>
+
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div><div class="col-sm-3">
-                <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            <div class="card" style="">
+                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Building contact me section</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Start</a>
+                    <p class="card-text"><small class="text-muted">Status:</small></p>
+
                 </div>
             </div>
         </div>

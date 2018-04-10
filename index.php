@@ -22,7 +22,7 @@ include ("user-register.php");
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.css" rel="stylesheet">
-
+    <link href="css/buttons.css" rel="stylesheet">
   </head>
 
   <body>
@@ -36,7 +36,7 @@ include ("user-register.php");
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Sign In</button>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary" href="">Admin</a>
+            <button type="button" class="btn btn-primary" href="">Admin</button>
           </li>
         </ul>
       </div>
