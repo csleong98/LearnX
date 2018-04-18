@@ -38,14 +38,14 @@ session_start();
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto small-navbar-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#"><?php echo $_SESSION['login_username'];?></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">Chee Seng</a>
+                        aria-expanded="false"></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Profile</a>
-                        <a class="dropdown-item" href="#">Log Out</a>
+                        <a class="dropdown-item" href="index.php">Log Out</a>
                     </div>
                 </li>
         </div>
@@ -56,9 +56,9 @@ session_start();
                 <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                     alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Buildin the navbar</h5>
+                    <h5 class="card-title">Building the navbar</h5>
                     <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary">Start</a>
+                    <a href="tutorial_1.php" class="btn btn-primary">Start</a>
                     <p class="card-text"><small class="text-muted">Status:</small></p>
                 </div>
             </div>
@@ -68,9 +68,8 @@ session_start();
                 <div class="card-body">
                     <h5 class="card-title">Building the user profile section</h5>
                     <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary">Start</a>
+                    <a href="tutorial_2.php" class="btn btn-primary">Start</a>
                     <p class="card-text"><small class="text-muted">Status:</small></p>
-
                 </div>
             </div>
             <div class="card" style="">
@@ -79,7 +78,7 @@ session_start();
                 <div class="card-body">
                     <h5 class="card-title">Building the porfolio section</h5>
                     <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary">Start</a>
+                    <a href="tutorial_3.php" class="btn btn-primary">Start</a>
                     <p class="card-text"><small class="text-muted">Status:</small></p>
 
                 </div>
@@ -90,7 +89,7 @@ session_start();
                 <div class="card-body">
                     <h5 class="card-title">Building contact me section</h5>
                     <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary">Start</a>
+                    <a href="tutorial_4.php" class="btn btn-primary">Start</a>
                     <p class="card-text"><small class="text-muted">Status:</small></p>
 
                 </div>
