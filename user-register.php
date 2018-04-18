@@ -50,6 +50,13 @@ include ('connection.php');
 		
 			$query = "INSERT INTO user(username, realname, email, password, confirm_password) "."VALUES('$username', '$fullname', '$email', '$password', '$confirm_password');"; 
 			$results = mysqli_query($conn, $query);
+		}
+
+		$tutor_sql = "SELECT * FROM tutorial";
+		$results2 = mysqli_query($conn, $tutor_sql);
+		if(mysqli_num_rows($results2) >= 0){
+			$query2 = "INSERT INTO tutorial(username) "."VALUES('$username');"; 
+			$results2 = mysqli_query($conn, $query2);
 			echo 'saved';
 			exit();
 		}
