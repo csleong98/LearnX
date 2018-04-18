@@ -22,7 +22,8 @@ include('connection.php');
         }
         else {
             echo "<script>alert('Welcome back! ".$_POST['login_username']."');";
-            echo "window.location.href='sidebar.php';</script>";
+            $_SESSION['login_username'] = $username;
+            echo "window.location.href='tutorial_1.php';</script>";
             exit();
         }
         
