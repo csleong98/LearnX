@@ -23,7 +23,7 @@ include('connection.php');
         else {
             echo "<script>alert('Welcome back! ".$_POST['login_username']."');";
             $_SESSION['login_username'] = $username;
-            echo "window.location.href='tutorial_1.php';</script>";
+            echo "window.location.href='user_homepage.php';</script>";
             exit();
         }
         
