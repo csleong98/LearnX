@@ -14,7 +14,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>User Profile Page</title>
+    <title>Creating user profile section</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +27,7 @@ session_start();
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/sidebar.css">
     <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/checkbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/learn.css">
 
 </head>
@@ -36,50 +37,19 @@ session_start();
         <nav id="sidebar">
             <div class="sidebar-header">
                 <!-- Sidebar Header -->
-                <h3>Collapsible Sidebar</h3>
+                <h3>User Profile Tutorial</h3>
             </div>
-
             <!-- Sidebar Links -->
             <ul class="list-unstyled components">
                 <li>
-                    <a class="chevron-dropdown" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Creating Navbar</a>
+                    <a class="chevron-dropdown" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">View Steps</a>
                     <ul id="homeSubmenu" class="list-unstyled collapse">
                         <li>
-                            <p>Creating navigation bar is pretty easy.</p>
+                            <p>Creating user profile is pretty easy.</p>
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-10 mx-auto">
                                         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modal1">View Code!</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="chevron-dropdown" href="#step2" data-toggle="collapse" aria-expanded="false">Chapter 2</a>
-                    <ul class="collapse list-unstyled" id="step2" aria-expanded="true">
-                        <li>
-                            <p>Second Step</p>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-10 mx-auto">
-                                        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modal2">View Code!</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="chevron-dropdown" href="#step3" data-toggle="collapse" aria-expanded="false">Chapter 3</a>
-                    <ul class="collapse list-unstyled" id="step3" aria-expanded="true">
-                        <li>
-                            <p>Third Step</p>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-10 mx-auto">
-                                        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modal3">View Code!</button>
                                     </div>
                                 </div>
                             </div>
@@ -94,18 +64,20 @@ session_start();
                 <div class="navbar-header navbar-brand">
                     <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                         <i class="fa fa-align-left"></i>
-                        Toggle Sidebar
+                        Sidebar Toggler
                     </button>
                 </div>
                 <!-- navbar links -->
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto small-navbar-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="user_homepage.php">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"><?php echo $_SESSION['login_username'];?></a>
+                                aria-expanded="false">
+                                <?php echo $_SESSION['login_username'];?>
+                            </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Profile</a>
                                 <a class="dropdown-item" href="user_homepage.php">Log Out</a>
@@ -158,21 +130,6 @@ session_start();
                     </div>
                 </nav>
                 <!-- /browser's navbar -->
-
-
-                <!-- header -->
-                <div class="content">
-                    <header class="masthead text-white text-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-9 mx-auto">
-                                    <h3>Navbar tutorial</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                </div>
-                <!-- /header -->
             </div>
         </div>
 
@@ -181,38 +138,27 @@ session_start();
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="signupModalHeader">Sign Up</h5>
+                        <h5 class="modal-title" id="signupModalHeader">Code Blocks</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="fullname">Full Name:</label>
-                                <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter fullname here">
+                    <form action="step2.php" method="POST">
+                        <div class="modal-body">
+                            <div class="steps_checkbox">
+                                <input type="checkbox" value="step2done" id="step2_checkbox" name="step2_checkbox" />
+                                <label for="step2_checkbox"></label>
                             </div>
-                            <div class="form-group">
-                                <label for="username">Username:</label>
-                                <input class="form-control" type="text" name="username" id="username" placeholder="Enter username here">
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password:</label>
-                                <input class="form-control" type="text" name="password" id="user-password" placeholder="Enter password here">
-                            </div>
-                            <div class="form-group">
-                                <label for="confirm-password">Confirm Password:</label>
-                                <input class="form-control" type="text" name="confirm-password" id="user-confirm-password" placeholder="Re-enter password here">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Bootstrap 4 Javascript -->
