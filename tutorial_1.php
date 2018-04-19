@@ -2,6 +2,21 @@
 
 session_start();
 
+include('connection.php');
+
+$username = $_SESSION['login_username'];
+$sql = "SELECT * FROM tutorial WHERE username = '$username'";
+$results = mysqli_query($conn, $sql);
+
+if(mysqli_num_rows($results) >= 0){
+    while($row = mysqli_fetch_array($results)){
+        $step1 = $row['step1'];
+        $step2 = $row['step2'];
+        $step3 = $row['step3'];
+        $step4 = $row['step4'];
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -146,13 +161,13 @@ session_start();
                     <form action="step1.php" method="POST">
                         <div class="modal-body">
                             <div class="steps_checkbox">
-                                <input type="checkbox" value="step1done" id="step1_checkbox" name="step1_checkbox" />
+                                <input type="checkbox" value="step1done" id="step1_checkbox" name="step1_checkbox" <?php if($step1 == 1){echo "checked";}else{echo "";}?>/>
                                 <label for="step1_checkbox"></label>
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
                         </div>
                     </form>
                 </div>

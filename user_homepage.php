@@ -16,12 +16,6 @@ if(mysqli_num_rows($results) >= 0){
         $step4 = $row['step4'];
     }
 }
-else {
-    $step1 = 0;
-    $step2 = 0;
-    $step3 = 0;
-    $step4 = 0;
-}
     
 ?>
 
