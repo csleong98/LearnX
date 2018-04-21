@@ -7,6 +7,7 @@ include('connection.php');
 $username = $_SESSION['login_username'];
 $sql = "SELECT * FROM tutorial WHERE username = '$username'";
 $results = mysqli_query($conn, $sql);
+$records = "";
 
 if(mysqli_num_rows($results) >= 0){
     while($row = mysqli_fetch_array($results)){
@@ -17,6 +18,22 @@ if(mysqli_num_rows($results) >= 0){
     }
 }
     
+$sql_check = "SELECT * FROM coursefeedback WHERE username = '$username'";
+$results2 = mysqli_query($conn, $sql_check);
+
+if(mysqli_num_rows($results2) > 0){
+    
+}
+else {
+    if(($step1 == "1" && $step2 == "1") && ($step3 == "1" && $step4 == "1")){
+    
+        echo "<script>alert('You have finished all Portfolio Course, please submit your feedback about the course');";
+        echo "window.location.href='course_feedback.php';</script>";
+        
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +46,7 @@ if(mysqli_num_rows($results) >= 0){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home</title>
+    <title><?php echo $username;?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -41,13 +58,15 @@ if(mysqli_num_rows($results) >= 0){
 
     <!-- Custom styles for this template -->
     <link href="css/userpage.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
+
 </head>
 
 <body>
 
     <!-- browser's navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="navbar-header navbar-brand">
+        <div class="navbar-header navbar-brand">LearnX - Build your own portfolio website
         </div>
         <!-- navbar links -->
         <div class="collapse navbar-collapse">
@@ -65,7 +84,7 @@ if(mysqli_num_rows($results) >= 0){
                 </li>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top: 7em; padding-bottom: 7em;">
         <div class="card-deck">
             <div class="card" style="">
                 <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -106,11 +125,57 @@ if(mysqli_num_rows($results) >= 0){
                     <p class="card-text"></p>
                     <a href="tutorial_4.php" class="btn btn-primary">Start</a>
                     <p class="card-text"><small class="text-muted">Status: <?php if($step4 == 0){echo "Pending";}else{echo "Done";}?></small></p>
-
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- Bootstrap 4 Javascript -->

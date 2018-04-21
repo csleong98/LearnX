@@ -94,12 +94,12 @@ include ("user-register.php");
               </div>
               <div class="form-group">
                 <label for="password">Password:</label>
-                <input class="form-control" type="text" name="password" id="password" placeholder="Enter password here">
+                <input class="form-control" type="password" name="password" id="password" placeholder="Enter password here">
                 <span></span>
               </div>
               <div class="form-group">
                 <label for="confirm_password">Confirm Password:</label>
-                <input class="form-control" type="text" name="confirm_password" id="confirm_password" placeholder="Confirm your password here">
+                <input class="form-control" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password here">
                 <span></span>
               </div>
               <div class="modal-footer">
@@ -131,7 +131,7 @@ include ("user-register.php");
               </div>
               <div class="form-group">
                 <label for="password">Password:</label>
-                <input class="form-control" type="text" name="login_password" id="login_password" placeholder="Enter password here">
+                <input class="form-control" type="password" name="login_password" id="login_password" placeholder="Enter password here">
                 <span></span>
               </div>
               <div class="modal-footer">
@@ -163,7 +163,7 @@ include ("user-register.php");
               </div>
               <div class="form-group">
                 <label for="password">Password:</label>
-                <input class="form-control" type="text" name="admin_password" id="admin_password" placeholder="Enter admin password here">
+                <input class="form-control" type="password" name="admin_password" id="admin_password" placeholder="Enter admin password here">
                 <span></span>
               </div>
               <div class="modal-footer">

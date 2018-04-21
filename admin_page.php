@@ -30,6 +30,8 @@ $username = $_SESSION['admin_username'];
 
     <!-- Custom styles for this template -->
     <link href="css/userpage.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -59,7 +61,7 @@ $username = $_SESSION['admin_username'];
             </ul>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top: 7em; padding-bottom: 7em;">
         <div class="row">
             <div class="col-sm-3 col-md-3">
                 <div class="card" style="">
@@ -77,7 +79,7 @@ $username = $_SESSION['admin_username'];
                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">User Course Status</h5>
-                        <a href="course_status.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
+                        <a href="view_course_status.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
                     </div>
                 </div>
             </div>
@@ -87,7 +89,7 @@ $username = $_SESSION['admin_username'];
                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">General Website Feedback</h5>
-                        <a href="general_feedback.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
+                        <a href="view_general_feedback.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
                     </div>
                 </div>
             </div>
@@ -97,13 +99,59 @@ $username = $_SESSION['admin_username'];
                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Registered User Course Feedback</h5>
-                        <a href="course_feedback.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
+                        <a href="view_course_feedback.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fa fa-facebook fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fa fa-twitter fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fa fa-instagram fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap 4 Javascript -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

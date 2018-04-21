@@ -80,7 +80,7 @@ session_start();
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Profile</a>
-                                <a class="dropdown-item" href="user_homepage.php">Log Out</a>
+                                <a class="dropdown-item" href="logout.php">Log Out</a>
                             </div>
                         </li>
                 </div>
