@@ -22,25 +22,33 @@ include ("user-register.php");
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.css" rel="stylesheet">
-    <link href="css/buttons.css" rel="stylesheet">
+    <!-- <link href="css/buttons.css" rel="stylesheet"> -->
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-light bg-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">LearnX</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.php">LearnX</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Sign In</button>
+            <a class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-primary" href="">Admin</button>
+            <a class="nav-link" data-toggle="modal" data-target="#adminModal">Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.php">Feedback</a>
           </li>
         </ul>
       </div>
     </nav>
+
 
     <!-- Masthead -->
     <header class="masthead text-white text-center">
@@ -136,6 +144,38 @@ include ("user-register.php");
       </div>
     </div>
 
+    <!-- Admin Log In -->
+    <div class="modal fade" id="adminModal" tabindex="-1" role="dialog" aria-labelledby="adminLogIn" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalHeader">Admin Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="admin.php" method="POST">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input class="form-control" type="text" name="admin_username" id="admin_username" placeholder="Enter admin username here">
+                <span></span>
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input class="form-control" type="text" name="admin_password" id="admin_password" placeholder="Enter admin password here">
+                <span></span>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="admin_login_btn" name="admin_login_btn" type="submit" class="btn btn-primary">Log In</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Icons Grid -->
     <section class="features-icons bg-light text-center">
       <div class="container">
@@ -206,7 +246,7 @@ include ("user-register.php");
     <footer class="footer bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <div class="col-lg-6 text-center text-lg-left my-auto">
             <ul class="list-inline mb-2">
               <li class="list-inline-item">
                 <a href="#">About</a>
@@ -226,7 +266,7 @@ include ("user-register.php");
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
           </div>
-          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <div class="col-lg-6 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item mr-3">
                 <a href="#">
