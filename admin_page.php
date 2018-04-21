@@ -18,7 +18,7 @@ $username = $_SESSION['admin_username'];
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home</title>
+    <title>Admin Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -36,66 +36,69 @@ $username = $_SESSION['admin_username'];
 
     <!-- browser's navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="navbar-header navbar-brand">
+        <div class="navbar-header navbar-brand">LearnX Admin
         </div>
         <!-- navbar links -->
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto small-navbar-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><?php echo $username;?></a>
+                    <a class="nav-link" href="#">
+                        <?php echo $username;?>
+                    </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false"></a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Profile</a>
-                        <a class="dropdown-item" href="logout.php">Log Out</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
                 </li>
+                <li class="nav-item">
+                    <a class=" btn btn-outline-primary" href="logout.php">Log Out</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="card-deck">
-            <div class="card" style="">
-                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Building the navbar</h5>
-                    <p class="card-text"></p>
-                    <a href="tutorial_1.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status:</small></p>
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+                <div class="card" style="">
+                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">LearnX Registered User</h5>
+                        <a href="view_user.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="">
-                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Building the user profile section</h5>
-                    <p class="card-text"></p>
-                    <a href="tutorial_2.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status:</small></p>
+            <div class="col-sm-3 col-md-3">
+                <div class="card" style="">
+                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">User Course Status</h5>
+                        <a href="course_status.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="">
-                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Building the porfolio section</h5>
-                    <p class="card-text"></p>
-                    <a href="tutorial_3.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status:</small></p>
-
+            <div class="col-sm-3 col-md-3">
+                <div class="card" style="">
+                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">General Website Feedback</h5>
+                        <a href="general_feedback.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="">
-                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Building contact me section</h5>
-                    <p class="card-text"></p>
-                    <a href="tutorial_4.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status:</small></p>
-
+            <div class="col-sm-3 col-md-3">
+                <div class="card" style="">
+                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Registered User Course Feedback</h5>
+                        <a href="course_feedback.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,7 +113,6 @@ $username = $_SESSION['admin_username'];
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- Custom Javascript -->
-    <script src="js/sidebar.js"></script>
 </body>
 
 </html>
