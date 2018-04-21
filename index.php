@@ -155,7 +155,7 @@ include ("user-register.php");
             </button>
           </div>
           <div class="modal-body">
-            <form action="admin.php" method="POST">
+            <form action="admin_login.php" method="POST">
               <div class="form-group">
                 <label for="username">Username:</label>
                 <input class="form-control" type="text" name="admin_username" id="admin_username" placeholder="Enter admin username here">

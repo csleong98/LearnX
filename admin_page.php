@@ -4,18 +4,7 @@ session_start();
 
 include('connection.php');
 
-$username = $_SESSION['login_username'];
-$sql = "SELECT * FROM tutorial WHERE username = '$username'";
-$results = mysqli_query($conn, $sql);
-
-if(mysqli_num_rows($results) >= 0){
-    while($row = mysqli_fetch_array($results)){
-        $step1 = $row['step1'];
-        $step2 = $row['step2'];
-        $step3 = $row['step3'];
-        $step4 = $row['step4'];
-    }
-}
+$username = $_SESSION['admin_username'];
     
 ?>
 
@@ -53,7 +42,7 @@ if(mysqli_num_rows($results) >= 0){
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto small-navbar-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><?php echo $_SESSION['login_username'];?></a>
+                    <a class="nav-link" href="#"><?php echo $username;?></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -74,7 +63,7 @@ if(mysqli_num_rows($results) >= 0){
                     <h5 class="card-title">Building the navbar</h5>
                     <p class="card-text"></p>
                     <a href="tutorial_1.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status: <?php if($step1 == 0){echo "Pending";}else{echo "Done";}?></small></p>
+                    <p class="card-text"><small class="text-muted">Status:</small></p>
                 </div>
             </div>
             <div class="card" style="">
@@ -84,7 +73,7 @@ if(mysqli_num_rows($results) >= 0){
                     <h5 class="card-title">Building the user profile section</h5>
                     <p class="card-text"></p>
                     <a href="tutorial_2.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status: <?php if($step2 == 0){echo "Pending";}else{echo "Done";}?></small></p>
+                    <p class="card-text"><small class="text-muted">Status:</small></p>
                 </div>
             </div>
             <div class="card" style="">
@@ -94,7 +83,7 @@ if(mysqli_num_rows($results) >= 0){
                     <h5 class="card-title">Building the porfolio section</h5>
                     <p class="card-text"></p>
                     <a href="tutorial_3.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status: <?php if($step3 == 0){echo "Pending";}else{echo "Done";}?></small></p>
+                    <p class="card-text"><small class="text-muted">Status:</small></p>
 
                 </div>
             </div>
@@ -105,7 +94,7 @@ if(mysqli_num_rows($results) >= 0){
                     <h5 class="card-title">Building contact me section</h5>
                     <p class="card-text"></p>
                     <a href="tutorial_4.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status: <?php if($step4 == 0){echo "Pending";}else{echo "Done";}?></small></p>
+                    <p class="card-text"><small class="text-muted">Status:</small></p>
 
                 </div>
             </div>
@@ -121,6 +110,7 @@ if(mysqli_num_rows($results) >= 0){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- Custom Javascript -->
+    <script src="js/sidebar.js"></script>
 </body>
 
 </html>
