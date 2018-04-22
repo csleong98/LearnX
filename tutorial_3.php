@@ -30,6 +30,40 @@ session_start();
     <link href="css/checkbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/learn.css">
 
+    <style>
+        #profile-pic {
+            margin: 5em 0 1em 0;
+        }
+
+        .caption-title {
+            margin: 10px 0 10px 0;
+            padding: 20px 0 20px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .rebel-divider {
+            margin: 20px 0px;
+            text-align: center;
+        }
+
+        .line {
+            margin: 10px 10px;
+            width: 40%;
+            border-bottom: 3px solid black;
+            display: inline-block;
+        }
+
+        .icon-line {
+            display: inline-block;
+        }
+
+        .page-title {
+            text-align: center;
+            margin: 40px 20px;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -130,6 +164,77 @@ session_start();
                     </div>
                 </nav>
                 <!-- /browser's navbar -->
+                <!-- About Me Section -->
+                <section id="About">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <h1 class="page-title">Ola! I'm Cheese</h1>
+                                <p>Front-end Developer in the making. Chee Seng has experience in graphics design. He is currently
+                                    studying at Asia Pacific University and also learning about 3D designs to be able to
+                                    do more than he used to. 
+                                </p>
+
+                                <div class="rebel-divider">
+                                    <span class="line"></span>
+                                    <span class="icon-line fa fa-rebel fa-2x"></span>
+                                    <span class="line"></span>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        Front-end Developer
+                                        <i class="fa fa-free-code-camp"></i>
+                                        Graphics Designer
+                                        <i class="fa fa-free-code-camp"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img id="profile-pic" class="rounded mx-auto d-block" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAm-AAAAJGIyNzBkODMyLTRjZTItNDg3OC05MTlhLTZhMDBjMzg4MjU1ZQ.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Projects -->
+                <section id="Projects">
+                    <div class="container">
+                        <h1 class="page-title">Projects</h1>
+
+                        <div class="rebel-divider">
+                            <span class="line"></span>
+                            <span class="icon-line fa fa-rebel fa-2x"></span>
+                            <span class="line"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img class="thumbnail-img img-fluid rounded mx-auto d-block" src="https://images.pexels.com/photos/219000/pexels-photo-219000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                                </div>
+                                <div class="caption">
+                                    <h3 class="caption-title">TRENDware Website</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img class="thumbnail-img img-fluid rounded mx-auto d-block" src="https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                                    <div class="caption">
+                                        <h3 class="caption-title">SaferTrack Technologies Website</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img class="thumbnail-img img-fluid rounded mx-auto d-block" src="https://images.pexels.com/photos/220502/pexels-photo-220502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                                    <div class="caption">
+                                        <h3 class="caption-title">Cahaya Anugerah Dinamik Website</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 

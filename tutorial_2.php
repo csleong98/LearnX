@@ -29,7 +29,38 @@ session_start();
     <link href="css/landing-page.css" rel="stylesheet">
     <link href="css/checkbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/learn.css">
+    <style>
+        #profile-pic {
+            margin: 5em 0 1em 0;
+        }
+        .caption-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            font-family: 'Amatic SC', cursive;
+        }
 
+        .rebel-divider {
+            margin: 20px 0px;
+            text-align: center;
+        }
+
+        .line {
+            margin: 10px 10px;
+            width: 40%;
+            border-bottom: 3px solid black;
+            display: inline-block;
+        }
+
+        .icon-line {
+            display: inline-block;
+        }
+
+        .page-title {
+            text-align: center;
+            margin: 40px 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -130,6 +161,38 @@ session_start();
                     </div>
                 </nav>
                 <!-- /browser's navbar -->
+                <!-- About Me Section -->
+                <section id="About">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <h1 class="page-title">Ola! I'm Cheese</h1>
+                                <p>Front-end Developer in the making. Chee Seng has experience in graphics design. He is currently
+                                    studying at Asia Pacific University and also learning about 3D designs to be able to
+                                    do more than he used to. 
+                                </p>
+
+                                <div class="rebel-divider">
+                                    <span class="line"></span>
+                                    <span class="icon-line fa fa-rebel fa-2x"></span>
+                                    <span class="line"></span>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        Front-end Developer
+                                        <i class="fa fa-free-code-camp"></i>
+                                        Graphics Designer
+                                        <i class="fa fa-free-code-camp"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img id="profile-pic" class="rounded mx-auto d-block" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAm-AAAAJGIyNzBkODMyLTRjZTItNDg3OC05MTlhLTZhMDBjMzg4MjU1ZQ.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
