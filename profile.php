@@ -70,28 +70,28 @@ $username = $_SESSION['login_username'];
         </div>
 
         <div class="form-group">
-            <label class="mr-sm-2" for="username">Username:</label>
-            <input name="username" class="form-control" type="text" placeholder="<?php echo $edit_username;?>">
+            <label class="mr-sm-2" for="username">Username: <?php echo $edit_username;?></label>
+            <input name="username" class="form-control" type="text" placeholder="Insert new username">
         </div>
 
         <div class="form-group">
-            <label class="mr-sm-2" for="email">Email:</label>
-            <input name="email" class="form-control" type="email" placeholder="<?php echo $email;?>">
+            <label class="mr-sm-2" for="email">Email: <?php echo $email;?></label>
+            <input name="email" class="form-control" type="email" placeholder="Insert new email">
         </div>
 
         <div class="form-group">
-            <label class="mr-sm-2" for="password">Password:</label>
-            <input name="password" class="form-control" type="password" placeholder="<?php echo $password;?>">
+            <label class="mr-sm-2" for="password">Password: <?php echo $password;?></label>
+            <input name="password" class="form-control" type="password" placeholder="Insert new password">
         </div>
 
         <div class="form-group">
-            <label class="mr-sm-2" for="email">Confirm Password:</label>
-            <input name="confirm_password" class="form-control" type="password" placeholder="<?php echo $confirm_password;?>">
+            <label class="mr-sm-2" for="email">Confirm Password: <?php echo $confirm_password;?></label>
+            <input name="confirm_password" class="form-control" type="password" placeholder="Insert new confirm password">
         </div>
 
         <div class="form-group">
                 <button type="submit" name="edit" class="btn btn-primary">Submit</button>
-                <a href="user_homepage.php" class="btn btn-primary">Back</a>
+                <a href="user_homepage.php" class="btn btn-primary">Cancel & Back</a>
         </div>
     </form>
 </div>

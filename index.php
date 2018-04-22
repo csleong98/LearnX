@@ -204,7 +204,7 @@ include ("user-register.php");
                 <i class="icon-check m-auto text-primary"></i>
               </div>
               <h3>Easy to Use</h3>
-              <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+              <p class="lead mb-0">Easy to learn!</p>
             </div>
           </div>
         </div>
@@ -219,8 +219,7 @@ include ("user-register.php");
           <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/responsive.svg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2>Fully Responsive Design</h2>
-            <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether
-              it's a phone, tablet, or desktop the page will behave responsively!</p>
+            <p class="lead mb-0">After you are done building the website, you can see the result on any mobile devices.</p>
           </div>
         </div>
         <div class="row no-gutters">
@@ -228,15 +227,14 @@ include ("user-register.php");
           <div class="col-lg-6 my-auto showcase-text">
             <h2>Updated For Bootstrap 4</h2>
             <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development!
-              All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+              LearnX is using the latest Bootstrap framework to educate people on front-end coding</p>
           </div>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/process.svg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2>Easy to Use &amp; Customize</h2>
-            <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options.
-              Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+            <p class="lead mb-0">LearnX introduce an easy way to learn to build a simple website with less code.</p>
           </div>
         </div>
       </div>
