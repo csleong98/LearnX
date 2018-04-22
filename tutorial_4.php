@@ -46,7 +46,7 @@ if(mysqli_num_rows($results) >= 0){
 
     <style>
         #profile-pic {
-            margin: 5em 0 1em 0;
+            margin: 2em 0 0 0;
         }
 
         .caption-title {
@@ -85,7 +85,7 @@ if(mysqli_num_rows($results) >= 0){
         <nav id="sidebar">
             <div class="sidebar-header">
                 <!-- Sidebar Header -->
-                <h3>Portfolio section Tutorial</h3>
+                <h3>Contact Section Tutorial</h3>
             </div>
             <!-- Sidebar Links -->
             <ul class="list-unstyled components">
@@ -226,7 +226,7 @@ if(mysqli_num_rows($results) >= 0){
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <img id="profile-pic" class="rounded mx-auto d-block" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAm-AAAAJGIyNzBkODMyLTRjZTItNDg3OC05MTlhLTZhMDBjMzg4MjU1ZQ.jpg">
+                                <img id="profile-pic" class="rounded mx-auto d-block" src="https://lh3.googleusercontent.com/5H2cFazCksMAazUVzXNQ18hC7vLigbjfcPhO8zxyNHFO1TJXbC9lrBESr5pmzmupeGTAw4hMmT_Q5uc=w1768-h861">
                             </div>
                         </div>
                     </div>
