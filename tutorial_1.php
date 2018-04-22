@@ -70,11 +70,22 @@ if(mysqli_num_rows($results) >= 0){
                             </div>
                         </li>
                         <li>
-                            <p>View CSS Code</p>
+                            <p>Finish this tutorial here</p>
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-10 mx-auto">
-                                        <a type="button" class="btn btn-primary" href="">CSS Code</a>
+                                        <form action="step1.php" method="POST">
+                                            <div class="form-group">
+                                                <div class="steps_checkbox">
+                                                    <input type="checkbox" value="step1done" id="step1_checkbox" name="step1_checkbox" <?php if($step1==1 ){echo "checked";}else{echo
+                                                        "";}?>/>
+                                                    <label for="step1_checkbox"></label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -157,34 +168,6 @@ if(mysqli_num_rows($results) >= 0){
                 <!-- /browser's navbar -->
             </div>
         </div>
-
-        <!-- Modals -->
-        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="signupModalHeader">Code Blocks</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <form action="step1.php" method="POST">
-                        <div class="modal-body">
-                            <div class="steps_checkbox">
-                                <input type="checkbox" value="step1done" id="step1_checkbox" name="step1_checkbox" <?php if($step1==1 ){echo "checked";}else{echo
-                                    "";}?>/>
-                                <label for="step1_checkbox"></label>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
     <!-- Bootstrap 4 Javascript -->

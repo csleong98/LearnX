@@ -53,9 +53,6 @@ $username = $_SESSION['admin_username'];
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
-                </li>
-                <li class="nav-item">
                     <a class=" btn btn-outline-primary" href="logout.php">Log Out</a>
                 </li>
             </ul>

@@ -2,6 +2,21 @@
 
 session_start();
 
+include('connection.php');
+
+$username = $_SESSION['login_username'];
+$sql = "SELECT * FROM tutorial WHERE username = '$username'";
+$results = mysqli_query($conn, $sql);
+
+if(mysqli_num_rows($results) >= 0){
+    while($row = mysqli_fetch_array($results)){
+        $step1 = $row['step1'];
+        $step2 = $row['step2'];
+        $step3 = $row['step3'];
+        $step4 = $row['step4'];
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -83,6 +98,27 @@ session_start();
                                 <div class="row">
                                     <div class="col-md-10 mx-auto">
                                         <a type="button" class="btn btn-primary" href="tutorial3_code_block.html">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Finish this tutorial here</p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-10 mx-auto">
+                                        <form action="step3.php" method="POST">
+                                            <div class="form-group">
+                                                <div class="steps_checkbox">
+                                                    <input type="checkbox" value="step3done" id="step3_checkbox" name="step3_checkbox" <?php if($step3==1 ){echo "checked";}else{echo
+                                                        "";}?>/>
+                                                    <label for="step3_checkbox"></label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -236,33 +272,6 @@ session_start();
                 </section>
             </div>
         </div>
-
-        <!-- Modals -->
-        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="signupModalHeader">Code Blocks</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <form action="step3.php" method="POST">
-                        <div class="modal-body">
-                            <div class="steps_checkbox">
-                                <input type="checkbox" value="step3done" id="step3_checkbox" name="step3_checkbox" />
-                                <label for="step3_checkbox"></label>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
     <!-- Bootstrap 4 Javascript -->
