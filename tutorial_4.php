@@ -79,11 +79,11 @@ session_start();
                     <a class="chevron-dropdown" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">View Steps</a>
                     <ul id="homeSubmenu" class="list-unstyled collapse">
                         <li>
-                            <p>Creating navigation bar is pretty easy.</p>
+                            <p>View HTML Code</p>
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-10 mx-auto">
-                                        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modal1">View Code!</button>
+                                        <a type="button" class="btn btn-primary" href="tutorial4_code_block.html">View Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -251,29 +251,29 @@ session_start();
                         <form>
                             <div class="form-group">
                                 <label for="inputName" class="control-label">Name</label>
-                                
-                                    <input type="name" class="form-control" id="inputName" placeholder="Name">
-                                
+
+                                <input type="name" class="form-control" id="inputName" placeholder="Name">
+
                             </div>
 
                             <div class="form-group">
                                 <label for="inputEmail" class="control-label">Email</label>
-                                
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                                
+
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+
                             </div>
 
                             <div class="form-group">
                                 <label for="inputMessage" class="control-label">Message</label>
-                                
-                                    <textarea class="form-control" rows="5" placeholder="Type here..."></textarea>
-                                
+
+                                <textarea class="form-control" rows="5" placeholder="Type here..."></textarea>
+
                             </div>
 
                             <div class="form-group">
-                                
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+
                             </div>
                         </form>
                     </div>

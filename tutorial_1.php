@@ -60,11 +60,21 @@ if(mysqli_num_rows($results) >= 0){
                     <a class="chevron-dropdown" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">View Steps</a>
                     <ul id="homeSubmenu" class="list-unstyled collapse">
                         <li>
-                            <p>Creating navigation bar is pretty easy.</p>
+                            <p>View HTML Code</p>
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-10 mx-auto">
-                                        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modal1">View Code!</button>
+                                        <a type="button" class="btn btn-primary" href="tutorial1_code_block.html">HTML Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>View CSS Code</p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-10 mx-auto">
+                                        <a type="button" class="btn btn-primary" href="">CSS Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +171,8 @@ if(mysqli_num_rows($results) >= 0){
                     <form action="step1.php" method="POST">
                         <div class="modal-body">
                             <div class="steps_checkbox">
-                                <input type="checkbox" value="step1done" id="step1_checkbox" name="step1_checkbox" <?php if($step1 == 1){echo "checked";}else{echo "";}?>/>
+                                <input type="checkbox" value="step1done" id="step1_checkbox" name="step1_checkbox" <?php if($step1==1 ){echo "checked";}else{echo
+                                    "";}?>/>
                                 <label for="step1_checkbox"></label>
                             </div>
                         </div>

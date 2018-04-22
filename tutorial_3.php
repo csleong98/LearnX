@@ -62,7 +62,6 @@ session_start();
             text-align: center;
             margin: 40px 20px;
         }
-        
     </style>
 </head>
 
@@ -79,11 +78,11 @@ session_start();
                     <a class="chevron-dropdown" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">View Steps</a>
                     <ul id="homeSubmenu" class="list-unstyled collapse">
                         <li>
-                            <p>Creating navigation bar is pretty easy.</p>
+                            <p>View HTML Code</p>
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-10 mx-auto">
-                                        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modal1">View Code!</button>
+                                        <a type="button" class="btn btn-primary" href="tutorial3_code_block.html">View Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +172,7 @@ session_start();
                                 <h1 class="page-title">Ola! I'm Cheese</h1>
                                 <p>Front-end Developer in the making. Chee Seng has experience in graphics design. He is currently
                                     studying at Asia Pacific University and also learning about 3D designs to be able to
-                                    do more than he used to. 
+                                    do more than he used to.
                                 </p>
 
                                 <div class="rebel-divider">
