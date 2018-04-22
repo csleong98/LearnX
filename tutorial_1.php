@@ -115,7 +115,7 @@ if(mysqli_num_rows($results) >= 0){
                                 <?php echo $_SESSION['login_username'];?>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="profile.php">Profile</a>
                                 <a class="dropdown-item" href="logout.php">Log Out</a>
                             </div>
                         </li>

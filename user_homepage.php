@@ -78,7 +78,7 @@ else {
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false"></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="profile.php">Profile</a>
                         <a class="dropdown-item" href="logout.php">Log Out</a>
                     </div>
                 </li>
