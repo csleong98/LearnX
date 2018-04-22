@@ -216,7 +216,7 @@ include ("user-register.php");
       <div class="container-fluid p-0">
         <div class="row no-gutters">
 
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/responsive.svg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2>Fully Responsive Design</h2>
             <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether
@@ -224,7 +224,7 @@ include ("user-register.php");
           </div>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/coding.svg');"></div>
           <div class="col-lg-6 my-auto showcase-text">
             <h2>Updated For Bootstrap 4</h2>
             <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development!
@@ -232,7 +232,7 @@ include ("user-register.php");
           </div>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/process.svg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2>Easy to Use &amp; Customize</h2>
             <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options.

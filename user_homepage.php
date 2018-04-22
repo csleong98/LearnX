@@ -46,7 +46,9 @@ else {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?php echo $username;?></title>
+    <title>
+        <?php echo $username;?>
+    </title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -60,6 +62,28 @@ else {
     <link href="css/userpage.css" rel="stylesheet">
     <link href="css/landing-page.css" rel="stylesheet">
 
+    <style>
+        .wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wrapper:after {
+            content: '';
+            display: block;
+            padding-top: 60%;
+        }
+
+        .wrapper img {
+            width: auto;
+            height: 100%;
+            max-width: none;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+    </style>
 </head>
 
 <body>
@@ -72,7 +96,9 @@ else {
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto small-navbar-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><?php echo $_SESSION['login_username'];?></a>
+                    <a class="nav-link" href="#">
+                        <?php echo $_SESSION['login_username'];?>
+                    </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -87,44 +113,64 @@ else {
     <div class="container-fluid" style="padding-top: 7em; padding-bottom: 7em;">
         <div class="card-deck">
             <div class="card" style="">
-                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Card image cap">
+                <div class="wrapper">
+                    <img class="card-img-top" src="img/navbar.svg" alt="Card image cap">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Building the navbar</h5>
                     <p class="card-text"></p>
                     <a href="tutorial_1.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status: <?php if($step1 == 0){echo "Pending";}else{echo "Done";}?></small></p>
+                    <p class="card-text">
+                        <small class="text-muted">Status:
+                            <?php if($step1 == 0){echo "Pending";}else{echo "Done";}?>
+                        </small>
+                    </p>
                 </div>
             </div>
             <div class="card" style="">
-                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Card image cap">
+                <div class="wrapper">
+                    <img class="card-img-top" src="img/profile.svg" alt="Card image cap">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Building the user profile section</h5>
                     <p class="card-text"></p>
                     <a href="tutorial_2.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status: <?php if($step2 == 0){echo "Pending";}else{echo "Done";}?></small></p>
+                    <p class="card-text">
+                        <small class="text-muted">Status:
+                            <?php if($step2 == 0){echo "Pending";}else{echo "Done";}?>
+                        </small>
+                    </p>
                 </div>
             </div>
             <div class="card" style="">
-                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Card image cap">
+                <div class="wrapper">
+                    <img class="card-img-top" src="img/portfolio.svg" alt="Card image cap">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Building the porfolio section</h5>
                     <p class="card-text"></p>
                     <a href="tutorial_3.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status: <?php if($step3 == 0){echo "Pending";}else{echo "Done";}?></small></p>
+                    <p class="card-text">
+                        <small class="text-muted">Status:
+                            <?php if($step3 == 0){echo "Pending";}else{echo "Done";}?>
+                        </small>
+                    </p>
 
                 </div>
             </div>
             <div class="card" style="">
-                <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="Card image cap">
+                <div class="wrapper">
+                    <img class="card-img-top" src="img/contact.svg" alt="Card image cap">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Building contact me section</h5>
                     <p class="card-text"></p>
                     <a href="tutorial_4.php" class="btn btn-primary">Start</a>
-                    <p class="card-text"><small class="text-muted">Status: <?php if($step4 == 0){echo "Pending";}else{echo "Done";}?></small></p>
+                    <p class="card-text">
+                        <small class="text-muted">Status:
+                            <?php if($step4 == 0){echo "Pending";}else{echo "Done";}?>
+                        </small>
+                    </p>
                 </div>
             </div>
         </div>
@@ -132,49 +178,49 @@ else {
 
     <!-- Footer -->
     <footer class="footer bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 text-center text-lg-left my-auto">
-            <ul class="list-inline mb-2">
-              <li class="list-inline-item">
-                <a href="#">About</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Contact</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-            </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
-          </div>
-          <div class="col-lg-6 text-center text-lg-right my-auto">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fa fa-facebook fa-2x fa-fw"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fa fa-twitter fa-2x fa-fw"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-instagram fa-2x fa-fw"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fa fa-facebook fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fa fa-twitter fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fa fa-instagram fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 
 

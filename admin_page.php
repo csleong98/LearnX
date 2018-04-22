@@ -32,6 +32,29 @@ $username = $_SESSION['admin_username'];
     <link href="css/userpage.css" rel="stylesheet">
     <link href="css/landing-page.css" rel="stylesheet">
 
+
+    <style>
+        .wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wrapper:after {
+            content: '';
+            display: block;
+            padding-top: 60%;
+        }
+
+        .wrapper img {
+            width: auto;
+            height: 100%;
+            max-width: none;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+    </style>
 </head>
 
 <body>
@@ -62,8 +85,9 @@ $username = $_SESSION['admin_username'];
         <div class="row">
             <div class="col-sm-3 col-md-3">
                 <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="Card image cap">
+                    <div class="wrapper">
+                    <img class="card-img-top" src="img/registered-user.svg" alt="Card image cap">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">LearnX Registered User</h5>
                         <a href="view_user.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
@@ -72,8 +96,9 @@ $username = $_SESSION['admin_username'];
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="Card image cap">
+                <div class="wrapper">
+                    <img class="card-img-top" src="img/course_status.svg" alt="Card image cap">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">User Course Status</h5>
                         <a href="view_course_status.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
@@ -82,8 +107,9 @@ $username = $_SESSION['admin_username'];
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="Card image cap">
+                <div class="wrapper">
+                    <img class="card-img-top" src="img/general_feedback.svg" alt="Card image cap">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">General Website Feedback</h5>
                         <a href="view_general_feedback.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
@@ -92,8 +118,9 @@ $username = $_SESSION['admin_username'];
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="card" style="">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/19678/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="Card image cap">
+                <div class="wrapper">
+                    <img class="card-img-top" src="img/course_feedback.svg" alt="Card image cap">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Registered User Course Feedback</h5>
                         <a href="view_course_feedback.php" class="btn btn-outline-primary btn-lg btn-block">View</a>
