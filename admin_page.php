@@ -152,7 +152,7 @@ $username = $_SESSION['admin_username'];
                             <a href="#">Privacy Policy</a>
                         </li>
                     </ul>
-                    <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; LearnX 2018. All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right my-auto">
                     <ul class="list-inline mb-0">
