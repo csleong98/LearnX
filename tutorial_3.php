@@ -226,7 +226,7 @@ if(mysqli_num_rows($results) >= 0){
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <img id="profile-pic" class="rounded mx-auto d-block" src="https://lh3.googleusercontent.com/5H2cFazCksMAazUVzXNQ18hC7vLigbjfcPhO8zxyNHFO1TJXbC9lrBESr5pmzmupeGTAw4hMmT_Q5uc=w1768-h861"> </div>
+                                <img id="profile-pic" class="rounded mx-auto d-block" src="img/me.jpg"> </div>
                             </div>
                     </div>
                 </section>

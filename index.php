@@ -97,11 +97,6 @@ include ("user-register.php");
                 <input class="form-control" type="password" name="password" id="password" placeholder="Enter password here">
                 <span></span>
               </div>
-              <div class="form-group">
-                <label for="confirm_password">Confirm Password:</label>
-                <input class="form-control" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password here">
-                <span></span>
-              </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button id="reg_btn" type="submit" class="btn btn-primary">Register</button>

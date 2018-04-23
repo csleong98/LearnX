@@ -43,18 +43,17 @@ include ('connection.php');
 		$username = $_POST['username'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
-		$confirm_password = $_POST['password_confirm'];
 		$sql = "SELECT * FROM user";
 		$results = mysqli_query($conn, $sql);
-		if (mysqli_num_rows($results) >= 0) {
+		if (mysqli_num_rows($results) > 0) {
 		
-			$query = "INSERT INTO user(username, realname, email, password, confirm_password) "."VALUES('$username', '$fullname', '$email', '$password', '$confirm_password');"; 
+			$query = "INSERT INTO user(username, realname, email, password) "."VALUES('$username', '$fullname', '$email', '$password');"; 
 			$results = mysqli_query($conn, $query);
 		}
 
 		$tutor_sql = "SELECT * FROM tutorial";
 		$results2 = mysqli_query($conn, $tutor_sql);
-		if(mysqli_num_rows($results2) >= 0){
+		if(mysqli_num_rows($results2) > 0){
 			$query2 = "INSERT INTO tutorial(username) "."VALUES('$username');"; 
 			$results2 = mysqli_query($conn, $query2);
 			echo 'saved';

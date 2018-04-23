@@ -139,32 +139,6 @@ $('document').ready(function () {
         }
     });
 
-    $('#confirm_password').on('blur', function () {
-
-        var pass = $('#password').val();
-        var password_confirm = $('#confirm_password').val();
-
-        if (password_confirm == '') {
-            password_confirm_state = false;
-            $('#confirm_password').parent().removeClass("form_success");
-            $('#confirm_password').parent().addClass("form_error");
-            $('#confirm_password').siblings("span").text('Please fill in your password');
-            return;
-        } else if (pass !== password_confirm) {
-            password_confirm_state = false;
-            $('#confirm_password').parent().removeClass("form_success");
-            $('#confirm_password').parent().addClass("form_error");
-            $('#confirm_password').siblings("span").text('Password does not match');
-            return;
-        } else if (pass == password_confirm) {
-            pass_state = true;
-            $('#confirm_password').parent().removeClass("form_error");
-            $('#confirm_password').parent().addClass("form_success");
-            $('#confirm_password').siblings("span").text('Password match');
-            return;
-        }
-    });
-
     $('#reg_btn').on('click', function () {
         var fullname = $('#fullname').val();
         var username = $('#username').val();
@@ -173,9 +147,9 @@ $('document').ready(function () {
         var password_confirm = $('#confirm_password').val();
 
         if ((fullname_state == false || username_state == false) || (email_state == false || pass_state == false)) {
-            if (password_confirm_state == false) {
+            
                 alert('Please fill in ALL information');
-            }
+            
         } else {
             // proceed with form submission
             $.ajax({
@@ -186,17 +160,15 @@ $('document').ready(function () {
                     'fullname': fullname,
                     'username': username,
                     'email': email,
-                    'password': password,
-                    'password_confirm': password_confirm
+                    'password': password
                 },
                 success: function (response) {
                     if (response == 'saved') {
-                        alert('Registered Successfully. Log in now');
                         $('#fullname').val('');
                         $('#username').val('');
                         $('#email').val('');
                         $('#password').val('');
-                        $('#confirm_password').val('');
+                        alert('Registered Successfully. Log in now');
                     } else {
                         alert("not saved");
                     }
